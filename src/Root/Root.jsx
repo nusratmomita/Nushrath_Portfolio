@@ -3,7 +3,7 @@ import { Outlet } from 'react-router';
 
 const Root = () => {
     return (
-        <div className=''>
+        <div>
             <Outlet></Outlet>
         </div>
     );

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+.truculenta-font {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* color palette */
+/* dark purple1 : #251C31
+/* dark purple2 : #2C1250
+medium purple1 : #4F228D
+medium purple2 : #693B93
+light purple : #CCD6F6
+text : #D9D9D9
+*/

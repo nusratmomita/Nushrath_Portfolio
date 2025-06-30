@@ -5,6 +5,7 @@ import AboutMe from '../../Components/AboutMe/AboutMe';
 import Skills from '../../Components/Skills/Skills';
 import Education from '../../Components/Education/Education';
 import Projects from '../../Components/Projects/Projects';
+import ContactMe from '../../Components/ContactMe/ContactMe';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Skills></Skills>
             <Education></Education>
             <Projects></Projects>
+            <ContactMe></ContactMe>
         </div>
     );
 };

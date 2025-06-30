@@ -1,7 +1,8 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import { FaFire, FaJava, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { FaFire, FaInstagram, FaJava, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiExpress, SiMongodb } from 'react-icons/si';
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Skills = () => {
     return (
@@ -58,6 +59,10 @@ const Skills = () => {
                             <div className="bg-[#CCD6F6] rounded-3xl p-2 flex flex-col items-center">
                                 <FaFire className="text-orange-500 " />
                                 <span className="text-[#4F228D] text-3xl font-bold mt-2">Firebase</span>
+                            </div>
+                            <div className="bg-[#CCD6F6] rounded-3xl p-2 flex flex-col items-center">
+                                <RiTailwindCssFill className="text-blue-500 " />
+                                <span className="text-[#4F228D] text-3xl font-bold mt-2">TailwindCSS</span>
                             </div>
                         </div>
                     </Marquee>

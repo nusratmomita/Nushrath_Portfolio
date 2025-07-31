@@ -9,7 +9,7 @@ import ContactMe from '../../Components/ContactMe/ContactMe';
 
 const Home = () => {
     return (
-        <div className='bg-[#251C31]'>
+        <div className='bg-[#251C31] pt-[100px]'>
             <Header></Header>
             <Banner></Banner>
             <AboutMe></AboutMe>

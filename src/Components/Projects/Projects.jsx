@@ -7,11 +7,11 @@ import { Link } from 'react-router';
 
 const Projects = () => {
     return (
-        <div data-aos="fade-down-right" className='max-w-7xl mx-auto text-[#2C1250] space-y-5 mb-20'>
+        <div id="projects" data-aos="fade-down-right" className='max-w-7xl mx-auto text-[#2C1250] space-y-5 mb-20'>
           <h1 className='text-6xl font-extrabold text-[#D9D9D9] text-left'>Projects</h1>
            <div className='mt-20 space-y-5'>
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <img 
                     className="w-full h-full rounded-3xl shadow-lg "
                     src={JatriProject} 
@@ -27,9 +27,9 @@ const Projects = () => {
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
                     <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> CRUD Operations</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Book a car</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Beautiful UI for booked & added cars</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Rent a car</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Track a car's booking count</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Searching and sorting by name and car price</li>
                     </ul>
                     </div>
 
@@ -54,7 +54,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col-reverse md:flex-row-reverse gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <img 
                     className="w-full h-full rounded-3xl shadow-lg "
                     src={TechGigsProject} 
@@ -69,10 +69,11 @@ const Projects = () => {
 
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
-                    <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
+                    <ul className="space-y-2 text-xl md:text-2xl font-medium text-gray-800">
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Bid For any task</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Add,Delete and Update tasks</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Show your added tasks in a table format UI</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Sorting feature </li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Dashboard for managing tasks effectively </li>
                     </ul>
                     </div>
 
@@ -97,11 +98,11 @@ const Projects = () => {
                 </div>
             </div>
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <img 
-                    className="w-full h-full rounded-3xl shadow-lg "
-                    src={CareerFindProject} 
-                    alt="CareerFind Project Preview" 
+                        className="w-full h-full rounded-3xl shadow-lg "
+                        src={CareerFindProject} 
+                        alt="CareerFind Project Preview" 
                     />
                 </div>
                 <div className='text-left space-y-2 md:w-1/2 w-full'>
@@ -112,10 +113,10 @@ const Projects = () => {
 
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
-                    <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
+                    <ul className="space-y-2 text-xl md:text-2xl font-medium">
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Find job</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> See details of job</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Easy navigation</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Authentication and Private route</li>
                     </ul>
                     </div>
 

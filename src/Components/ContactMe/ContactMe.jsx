@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactMe = () => {
   return (
-    <div className="max-w-7xl mx-auto p-10 bg-purple-50 rounded-3xl shadow-xl mt-10 flex flex-col md:flex-row gap-10 items-start">
+    <div id="contactMe" className="max-w-7xl mx-auto p-10 bg-purple-50 rounded-3xl shadow-xl mt-10 flex flex-col md:flex-row gap-10 items-start">
       
       {/* Left Side */}
       <div className="md:w-1/2 space-y-6">

@@ -1,46 +1,66 @@
 import React from 'react';
+import { Link } from 'react-router';
+import HomeBtn from '../../HomeBtn/HomeBtn';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
+import techStack from '../../../assets/techStack.png'; 
+
 
 const JatriDetails = () => {
     return (
-        <div className="card bg-base-100 p-20 shadow-sm max-w-5xl mx-auto mt-40">
-            <div className="card-body space-y-5">
-                <span className="text-5xl font-bold">Jatri</span>
-                <h1 className="text-5xl font-bold">🔗Description</h1>
-                <p className="text-3xl font-bold">Made with MERN stack, Jatri is a full stack project that will help you to find  for your next trip!
-                Book car is easy now. </p>
-                <h1 className="text-5xl font-bold">🎯Technologies used</h1>
-                <ul className="mt-6 flex flex-col gap-2 text-2xl">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>React</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>ExpressJs</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>MongoDB</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>Firebase</span>
-                </li>
-                <li >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span >TailwindCSS</span>
-                </li>
-                </ul>
-                <h1 className="text-5xl font-bold">🦾Challenges</h1>
-                <p className="text-3xl font-bold">The main challenge I felt while doing this project is in implementing Searching and sorting functionality.
-                    After doing a lot of try and fail, I finally implemented it.
-                </p>
-                <h1 className="text-5xl font-bold">⚡Future Improvement</h1>
-                <p className="text-3xl font-bold">I would like to add map integration in this project.
-                    Also I am working on the user interface fot this project.
-                </p>
+       <motion.div
+            className="card bg-purple-200 shadow-2xl max-w-5xl mx-auto my-10 rounded-3xl border border-gray-200"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <div className="card-body space-y-6 text-[#2C1250]">
+                <section>
+                    <h2 className="text-4xl font-bold mb-2">🔗 Description</h2>
+                    <p className="text-3xl font-medium">
+                        Jatri is a MERN full-stack project that helps users rent and manage cars easily and without a worry!
+                    </p>
+                </section>
+
+                <section>
+                    <h2 className="text-4xl font-bold mb-4">🎯 Technologies Used</h2>
+                    <ul className="grid grid-cols-2 gap-4 text-2xl font-bold">
+                        {
+                            ["React","React Router" ,"TailwindCSS","ExpressJS", "MongoDB", "Firebase" ].map((tech, index) => (
+                                <li key={index} className="flex items-center gap-1">
+                                    <img src={techStack} alt="techStack" /> 
+                                    {tech}
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 className="text-4xl font-bold  mb-2">🦾 Challenges</h2>
+                    <p className="text-3xl font-medium">
+                        The main challenge I faced was how to implement Searching and Sorting. Handling of API to execute them was the toughest thing.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 className="text-4xl font-bold  mb-2">⚡ Future Improvements</h2>
+                    <p className="text-3xl font-medium">
+                        I’d like to add features like Dashboard to manage renting car more effectively with comparison, a chart to compare prices, integrate Maps to get nearest location car deal offers and so on.
+                    </p>
+                </section>
+
+                <div className="-mt-10 text-center pt-6">
+                    <Link to='/'>
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
+                        >
+                            <HomeBtn />
+                        </motion.div>
+                    </Link>
+                </div>
             </div>
-        </div>
+       </motion.div>
     );
 };
 

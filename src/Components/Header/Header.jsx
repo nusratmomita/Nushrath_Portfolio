@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="navbar bg-[#693B93] text-[#D9D9D9] shadow-sm p-6">
+        <div className="navbar bg-[#693B93] text-[#D9D9D9] shadow-sm p-6 fixed top-0 z-20 ">
             <div className="navbar-start">
                 {/* Small screen */}
                 <div className="dropdown">
@@ -23,13 +23,13 @@ const Header = () => {
             </div>
             {/* Large screen */}
             <div className="navbar-end hidden lg:flex">
-                {/* <ul className="menu menu-horizontal px-1">
-                    <li className='text-2xl'>About Me</li>
-                    <li className='ml-5 text-2xl'>Skills</li>
-                    <li className='ml-5 text-2xl'>Education</li>
-                    <li className='ml-5 text-2xl'>Projects</li>
-                    <li className='ml-5 text-2xl'>Contact Me</li>
-                </ul> */}
+                <ul className="menu menu-horizontal px-1">
+                    <a href="#aboutMe"><li className='text-2xl'>About Me</li></a>
+                    <a href="#skills"><li className='ml-5 text-2xl'>Skills</li></a>
+                    <a href="#education"><li className='ml-5 text-2xl'>Education</li></a>
+                    <a href="#projects"><li className='ml-5 text-2xl'>Projects</li></a>
+                    <a href="#contactMe"> <li className='ml-5 text-2xl'>Contact Me</li></a>
+                </ul>
             </div>
         </div>
     );

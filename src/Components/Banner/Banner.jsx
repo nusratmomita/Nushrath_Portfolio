@@ -24,26 +24,26 @@ const Banner = () => {
                         <a href="https://github.com/nusratmomita" target='_blank'><FaGithub size={35} className="-mt-5 bg-[#b2c1f5] rounded-2xl w-12 h-12 p-2"></FaGithub></a>
                         <a href="https://codolio.com/profile/nusrat" target='_blank'><TbCodeCircle2 size={35} className="-mt-5 bg-[#b2c1f5] rounded-2xl w-12 h-12 p-2"></TbCodeCircle2></a>
                     </div>
-                    <a
-                        href='/resume.pdf'
+
+                    <button
+                        href='/Nushrath Momita Hussain Full-stack Developer resume.pdf'
                         download="resume.pdf"
                         onMouseEnter={() => setMouseHovered(true)}
-                        onMouseLeave={() => setMouseHovered(false)}
-                    >
+                        onMouseLeave={() => setMouseHovered(false)} >
                         {
                             mouseHovered ? 
-                            <div className='w-1/4 mt-8 cursor-pointer flex gap-2 justify-center items-center bg-[#2C1250] text-[#D9D9D9] font-bold text-2xl p-3 rounded-4xl'>
+                            <div className='w-[140px] mt-8 cursor-pointer flex gap-2 justify-center items-center bg-[#2C1250] text-[#D9D9D9] font-bold text-2xl p-3 rounded-4xl'>
                                 <span>Download</span>
                                 <FaDownload className="transition-transform duration-300 group-hover:translate-x-1" />
                             </div>
                             :
-                            <div className='w-1/4 mt-8 cursor-pointer flex gap-2 justify-center items-center bg-[#2C1250] text-[#D9D9D9] font-bold text-2xl p-3 rounded-4xl'>
+                            <div className='w-[140px] mt-8 cursor-pointer flex gap-2 justify-center items-center bg-[#2C1250] text-[#D9D9D9] font-bold text-2xl p-3 rounded-4xl'>
                                 <FaFileAlt className="transition-transform duration-300 group-hover:-translate-x-1" />
                                 <span>Resume</span>
                             </div>
                         }
 
-                    </a>
+                    </button>
                 </div>
                 <img className="w-90 h-90 rounded-full"src={profile} alt="nusrat" />
             </div>

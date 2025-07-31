@@ -23,13 +23,13 @@ const Header = () => {
             </div>
             {/* Large screen */}
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                {/* <ul className="menu menu-horizontal px-1">
                     <li className='text-2xl'>About Me</li>
                     <li className='ml-5 text-2xl'>Skills</li>
                     <li className='ml-5 text-2xl'>Education</li>
                     <li className='ml-5 text-2xl'>Projects</li>
                     <li className='ml-5 text-2xl'>Contact Me</li>
-                </ul>
+                </ul> */}
             </div>
         </div>
     );

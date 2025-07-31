@@ -27,9 +27,9 @@ const Projects = () => {
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
                     <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> CRUD Operations</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Book a car</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Beautiful UI for booked & added cars</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> CRUD Operations</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Book a car</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Beautiful UI for booked & added cars</li>
                     </ul>
                     </div>
 
@@ -70,9 +70,9 @@ const Projects = () => {
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
                     <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Bid For any task</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Add,Delete and Update tasks</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Show your added tasks in a table format UI</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Bid For any task</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Add,Delete and Update tasks</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Show your added tasks in a table format UI</li>
                     </ul>
                     </div>
 
@@ -101,7 +101,7 @@ const Projects = () => {
                     <img 
                     className="w-full h-full rounded-3xl shadow-lg "
                     src={CareerFindProject} 
-                    alt="Jatri Project Preview" 
+                    alt="CareerFind Project Preview" 
                     />
                 </div>
                 <div className='text-left space-y-2 md:w-1/2 w-full'>
@@ -113,9 +113,9 @@ const Projects = () => {
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
                     <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Find job</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> See details of job</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-green-600"/> Easy navigation</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Find job</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> See details of job</li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Easy navigation</li>
                     </ul>
                     </div>
 

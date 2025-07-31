@@ -8,7 +8,7 @@ const Education = () => {
                 <p className="text-3xl font-bold leading-relaxed">Currently, I am on my final year of bachelor's degree.
                     I am doing BSc in <span className='text-4xl font-extrabold'>"Software Engineering"</span> from <span className='text-4xl font-extrabold italic'>"Metropolitan University".</span>
                 </p>
-                <p className="text-3xl font-bold leading-relaxed">During my academies, I have gained a reasonable knowledge about core subjects like Computer Networking, Database Management, Operating System and many more.
+                <p className="text-3xl font-bold leading-relaxed">During my academics, I have gained a reasonable knowledge about core subjects like Computer Networking, Database Management, Operating System and many more.
                     [ My current CGPA is: <span className='text-4xl font-extrabold italic'>3.79 </span>]</p>
             </div>
         </div>

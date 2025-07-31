@@ -1,39 +1,64 @@
 import React from 'react';
+import { Link } from 'react-router'; // fixed import
+import HomeBtn from '../../HomeBtn/HomeBtn';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
+import techStack from '../../../assets/techStack.png'; 
 
 const CareenFind = () => {
     return (
-        <div className="card bg-base-100 p-20 shadow-sm max-w-5xl mx-auto mt-40">
-            <div className="card-body space-y-5">
-                <span className="text-5xl font-bold">CareerFind</span>
-                <h1 className="text-5xl font-bold">🔗Description</h1>
-                <p className="text-3xl font-bold">Made with MERN stack, CareerFind is a full stack project that will help your preferred job! </p>
-                <h1 className="text-5xl font-bold">🎯Technologies used</h1>
-                <ul className="mt-6 flex flex-col gap-2 text-2xl">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>React</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>React Tostify</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span>Firebase</span>
-                </li>
-                <li >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                    <span >TailwindCSS</span>
-                </li>
-                </ul>
-                <h1 className="text-5xl font-bold">🦾Challenges</h1>
-                <p className="text-3xl font-bold">The main challenge I felt while doing this project is to implement Authentication system.
-                </p>
-                <h1 className="text-5xl font-bold">⚡Future Improvement</h1>
-                <p className="text-3xl font-bold">I would like to add more features like search jobs and sort jobs by recent listing.
-                </p>
+        <motion.div
+            className="card bg-purple-200 shadow-2xl max-w-4xl mx-auto my-20 p-10 rounded-3xl border border-gray-200"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
+            <div className="card-body space-y-4 text-[#2C1250]">
+                <section>
+                    <h2 className="text-4xl font-bold mb-2">🔗 Description</h2>
+                    <p className="text-2xl ">
+                        Made with MERN stack, CareerFind is a full-stack project that helps you find your preferred job!
+                    </p>
+                </section>
+
+                <section>
+                    <h2 className="text-4xl font-bold mb-4">🎯 Technologies Used</h2>
+                    <ul className="grid grid-cols-2 gap-4 text-2xl font-bold">
+                        {["React", "React Toastify", "Firebase", "TailwindCSS"].map((tech, index) => (
+                            <li key={index} className="flex items-center gap-1">
+                               <img src={techStack} alt="techStack" /> 
+                               {tech}
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 className="text-4xl font-bold  mb-2">🦾 Challenges</h2>
+                    <p className="text-xl ">
+                        The main challenge I faced was implementing the authentication system effectively.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 className="text-4xl font-bold  mb-2">⚡ Future Improvements</h2>
+                    <p className="text-xl ">
+                        I’d like to add features like job search and sorting jobs by the most recent listings.
+                    </p>
+                </section>
+
+                <div className="text-center pt-6">
+                    <Link to='/'>
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
+                        >
+                            <HomeBtn />
+                        </motion.div>
+                    </Link>
+                </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

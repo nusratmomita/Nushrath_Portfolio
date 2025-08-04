@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiLinkedin } from "react-icons/fi";
 import { FaDownload, FaFileAlt, FaGithub } from "react-icons/fa";
 import { TbCodeCircle2 } from "react-icons/tb";
-import profile from '../../assets/profile.jpeg'
+import profile from '../../assets/profilePic.png'
 
 const Banner = () => {
     const [mouseHovered , setMouseHovered] = useState(false);

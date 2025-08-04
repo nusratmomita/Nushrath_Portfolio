@@ -13,7 +13,7 @@ const Projects = () => {
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
                 <div className="lg:w-1/2">
                     <img 
-                    className="w-full h-full rounded-3xl shadow-lg "
+                    className="w-full h-full rounded-xl shadow-lg "
                     src={JatriProject} 
                     alt="Jatri Project Preview" 
                     />
@@ -56,7 +56,7 @@ const Projects = () => {
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col-reverse md:flex-row-reverse gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
                 <div className="lg:w-1/2">
                     <img 
-                    className="w-full h-full rounded-3xl shadow-lg "
+                    className="w-full h-full rounded-xl shadow-lg "
                     src={TechGigsProject} 
                     alt="TechGigs Project Preview" 
                     />
@@ -72,8 +72,7 @@ const Projects = () => {
                     <ul className="space-y-2 text-xl md:text-2xl font-medium text-gray-800">
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Bid For any task</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Add,Delete and Update tasks</li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Sorting feature </li>
-                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Dashboard for managing tasks effectively </li>
+                        <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Dashboard for managing tasks effectively</li>
                     </ul>
                     </div>
 
@@ -100,7 +99,7 @@ const Projects = () => {
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
                 <div className="lg:w-1/2">
                     <img 
-                        className="w-full h-full rounded-3xl shadow-lg "
+                        className="w-full h-full rounded-xl shadow-lg "
                         src={CareerFindProject} 
                         alt="CareerFind Project Preview" 
                     />

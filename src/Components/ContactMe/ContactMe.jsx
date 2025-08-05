@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Swal from 'sweetalert2';
+import { FiSend } from "react-icons/fi";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+
 
 const ContactMe = () => {
 
-  const [result, setResult] = React.useState("");
+  const [isSubmitted , setIsSubmitted] = useState(false);
 
   const handleContactForm = async (e) => {
     e.preventDefault();
 
-    setResult("Sending....");
-    const formData = new FormData(event.target);
+    const formData = new FormData(e.target);
 
     formData.append("access_key", "2efff433-c4bc-4ff9-b164-440b3481910d");
+
+    setIsSubmitted(true);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -21,7 +26,6 @@ const ContactMe = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
       Swal.fire({
         title: "Do you want to send the massage?",
         showDenyButton: true,
@@ -29,23 +33,33 @@ const ContactMe = () => {
         confirmButtonText: "Send",
         denyButtonText: `Don't send`
       }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           Swal.fire("Sent!", "", "success");
+          e.target.reset();
+          setIsSubmitted(false);
         } else if (result.isDenied) {
-          Swal.fire("Changes are not saved", "", "info");
+          Swal.fire("message are not sent", "", "info");
         }
       });
-      event.target.reset();
+      // e.target.reset();
     } else {
       console.log("Error", data);
-      setResult(data.message);
+      Swal.fire({ 
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong! Please send again.",
+
+    });
     }
   };
 
 
   return (
-    <div  className='mt-20 max-w-7xl mx-auto text-[#2C1250] space-y-5'>
+    <motion.div  className='mt-20 max-w-7xl mx-auto text-[#2C1250] space-y-5'
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <h1 className='text-6xl font-extrabold text-[#D9D9D9] text-left'>Contact Me</h1>
       <div id="contactMe" className="max-w-7xl mx-auto p-10 bg-purple-50 rounded-3xl shadow-xl mt-10 flex flex-col md:flex-row gap-10 items-start">
         {/* Left Side */}
@@ -90,18 +104,30 @@ const ContactMe = () => {
                 placeholder="Type your message here..."
               ></textarea>
             </div>
+            <input type="text" name="honeypot" style={{ display: 'none' }} />
             <button
               type="submit"
-              className="cursor-pointer bg-purple-600 hover:bg-purple-700 text-white w-full px-6 py-2 rounded-xl font-semibold transition-all duration-300"
+              className="flex justify-center items-center gap-2 cursor-pointer bg-purple-600 hover:bg-purple-700 text-white w-full px-6 py-2 rounded-xl text-2xl font-semibold transition-all duration-300"
+              disabled={isSubmitted}
             >
-              Send
+              {isSubmitted ? (
+                <>
+                  <svg className="animate-spin h-6 w-6 mr-2 text-white" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <FiSend size={25}/> Sent
+                </>
+              )}
             </button>
           </form>
-          <span>{result}</span>
         </div>
-
       </div>
-    </div>
+    </motion.div>
   );
 };
 

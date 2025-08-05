@@ -11,12 +11,12 @@ const Header = () => {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li className='text-3xl'>About Me</li>
-                    <li className='text-3xl'>Skills</li>
-                    <li className='text-3xl'>Education</li>
-                    <li className='text-3xl'>Projects</li>
-                    <li className='text-3xl'>Contact Me</li>
+                    className="menu menu-sm dropdown-content bg-[#CCD6F6] text-[#251C31] rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <a href="#aboutMe"><li className='text-2xl'>About Me</li></a>
+                        <a href="#skills"><li className='text-2xl'>Skills</li></a>
+                        <a href="#education"><li className='text-2xl'>Education</li></a>
+                        <a href="#projects"><li className='text-2xl'>Projects</li></a>
+                        <a href="#contactMe"> <li className='text-2xl'>Contact Me</li></a>
                 </ul>
                 </div>
                 <h1 className="text-2xl p-2">Nushrath</h1>

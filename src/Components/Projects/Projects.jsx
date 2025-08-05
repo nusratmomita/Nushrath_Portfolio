@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 
 const Projects = () => {
     return (
-        <div id="projects" data-aos="fade-down-right" className='max-w-7xl mx-auto text-[#2C1250] space-y-5 mb-20'>
+        <div id="projects" data-aos="fade-down-right" className='max-w-7xl mx-10 lg:mx-auto text-[#2C1250] space-y-5 mb-20'>
           <h1 className='text-6xl font-extrabold text-[#D9D9D9] text-left'>Projects</h1>
            <div className='mt-20 space-y-5'>
             <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>

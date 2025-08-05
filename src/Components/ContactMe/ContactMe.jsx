@@ -55,7 +55,7 @@ const ContactMe = () => {
 
 
   return (
-    <motion.div  className='mt-20 max-w-7xl mx-auto text-[#2C1250] space-y-5'
+    <motion.div  className='max-w-7xl mx-10 lg:mx-auto text-[#2C1250] space-y-5'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}

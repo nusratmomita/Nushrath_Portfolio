@@ -6,7 +6,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 const Skills = () => {
     return (
-        <div id="skills" data-aos="fade-down-left" className='max-w-7xl mx-auto text-[#2C1250] space-y-5 mb-20'>
+        <div id="skills" data-aos="fade-down-left" className='max-w-7xl mx-10 lg:mx-auto text-[#2C1250] space-y-5 mb-20'>
             <h1 className='text-6xl font-extrabold text-[#D9D9D9] text-left'>Skills</h1>
             <h1 data-aos="fade-down" data-aos-duration="3000" 
                 className='text-5xl font-extrabold text-[#D9D9D9] text-center'>

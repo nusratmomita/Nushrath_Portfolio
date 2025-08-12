@@ -45,7 +45,7 @@ const Projects = () => {
                         💻 GitHub Repo
                         </button>
                     </a>
-                    <Link to='/jatriDetails' target='_blank'>
+                    <Link to='/jatriDetails'>
                         <button className='cursor-pointer bg-[#CCD6F6] text-purple-800 border-2 border-purple-700 px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-100 transition-all duration-300 transform hover:-translate-y-1'>
                             🔍 Details
                         </button>
@@ -88,7 +88,7 @@ const Projects = () => {
                         💻 GitHub Repo
                         </button>
                     </a>
-                    <Link to='/TechGigsDetails' target='_blank'>
+                    <Link to='/TechGigsDetails'>
                         <button className='cursor-pointer bg-[#CCD6F6] text-purple-800 border-2 border-purple-700 px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-100 transition-all duration-300 transform hover:-translate-y-1'>
                             🔍 Details
                         </button>
@@ -131,7 +131,7 @@ const Projects = () => {
                         💻 GitHub Repo
                         </button>
                     </a>
-                    <Link to='/careerFind' target='_blank'>
+                    <Link to='/careerFind'>
                         <button className='cursor-pointer bg-[#CCD6F6] text-purple-800 border-2 border-purple-700 px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-100 transition-all duration-300 transform hover:-translate-y-1'>
                             🔍 Details
                         </button>

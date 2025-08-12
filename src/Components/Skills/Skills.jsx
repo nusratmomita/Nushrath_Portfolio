@@ -1,7 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { FaFire, FaInstagram, FaJava, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiC, SiCplusplus, SiExpress, SiMongodb } from 'react-icons/si';
+import { SiC, SiCplusplus, SiExpress, SiJavascript, SiMongodb } from 'react-icons/si';
 import { RiTailwindCssFill } from "react-icons/ri";
 
 const Skills = () => {
@@ -24,26 +24,30 @@ const Skills = () => {
                             <span className="text-[#4F228D] text-3xl font-bold mt-2">Node.js</span>
                         </div>
                         <div className="bg-[#CCD6F6] rounded-3xl p-2  flex flex-col items-center">
-                            <SiExpress className="text-white" />
+                            <SiExpress className="text-purple" />
                             <span className="text-[#4F228D] text-3xl font-bold mt-2">Express.js</span>
                         </div>
                         <div className="bg-[#CCD6F6] rounded-3xl p-2  flex flex-col items-center">
                             <SiMongodb className="text-green-500" />
                             <span className="text-[#4F228D] text-3xl font-bold mt-2">MongoDB</span>
                         </div>
-                        <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center">
-                            <FaPython className="text-yellow-500" />
-                            <span className="text-[#4F228D] text-3xl font-bold mt-2">Python</span>
+                        <div className="bg-[#CCD6F6] rounded-3xl p-2 flex flex-col items-center">
+                            <FaFire className="text-orange-500 " />
+                            <span className="text-[#4F228D] text-3xl font-bold mt-2">Firebase</span>
                         </div>
-                        {/* <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center">
-                            <FaJavaScript className="text-yellow-500" />
-                            <span className="text-[#4F228D] text-3xl font-bold mt-2">Python</span>
-                        </div> */}
+                        <div className="bg-[#CCD6F6] rounded-3xl p-2 flex flex-col items-center">
+                            <RiTailwindCssFill className="text-blue-500 " />
+                            <span className="text-[#4F228D] text-3xl font-bold mt-2">TailwindCSS</span>
+                        </div>
                     </div>
                 </Marquee>
                 <div className="mt-20">
                     <Marquee pauseOnHover gradient={false} speed={50} direction='right'>
                         <div className="flex items-center gap-12 text-4xl">
+                            <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center ml-4">
+                                <SiJavascript className="text-purple-600" />
+                                <span className="text-[#4F228D] text-3xl font-bold mt-2">JavaScript</span>
+                            </div>
                             <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center">
                                 <FaJava className="text-red-600" />
                                 <span className="text-[#4F228D] text-3xl font-bold mt-2">Java</span>
@@ -52,18 +56,14 @@ const Skills = () => {
                                 <SiC className="text-blue-600" />
                                 <span className="text-[#4F228D] text-3xl font-bold mt-2">C</span>
                             </div>
-                            <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center">
+                            <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center ml-4">
                                 <SiCplusplus className="text-purple-600" />
                                 <span className="text-[#4F228D] text-3xl font-bold mt-2">C++</span>
                             </div>
-                            <div className="bg-[#CCD6F6] rounded-3xl p-2 flex flex-col items-center">
-                                <FaFire className="text-orange-500 " />
-                                <span className="text-[#4F228D] text-3xl font-bold mt-2">Firebase</span>
-                            </div>
-                            <div className="bg-[#CCD6F6] rounded-3xl p-2 flex flex-col items-center">
-                                <RiTailwindCssFill className="text-blue-500 " />
-                                <span className="text-[#4F228D] text-3xl font-bold mt-2">TailwindCSS</span>
-                            </div>
+                            <div className="bg-[#CCD6F6] rounded-3xl p-2 w-[120px] flex flex-col items-center">
+                            <FaPython className="text-yellow-500" />
+                            <span className="text-[#4F228D] text-3xl font-bold mt-2">Python</span>
+                        </div>
                         </div>
                     </Marquee>
                 </div>

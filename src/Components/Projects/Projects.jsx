@@ -9,24 +9,24 @@ const Projects = () => {
     return (
         <div id="projects" data-aos="fade-down-right" className='max-w-7xl mx-10 lg:mx-auto text-[#2C1250] space-y-5 mb-20'>
           <h1 className='text-6xl font-extrabold text-[#D9D9D9] text-left'>Projects</h1>
-           <div className='mt-20 space-y-5'>
-            <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
+           <div className='space-y-5'>
+            <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col lg:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
                 <div className="lg:w-1/2">
                     <img 
-                    className="w-full h-full rounded-xl shadow-lg "
+                    className="lg:w-full lg:h-full rounded-xl shadow-lg"
                     src={JatriProject} 
                     alt="Jatri Project Preview" 
                     />
                 </div>
-                <div className='text-left space-y-2 md:w-1/2 w-full'>
+                <div className='text-left space-y-2 w-full lg:w-1/2'>
                     <h1 className='text-6xl font-extrabold text-purple-800'>Jatri 🚗</h1>
-                    <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-700">
+                    <p className="text-2xl md:text-2xl font-medium leading-relaxed text-gray-700">
                     Jatri is a car rental website that allows users to smoothly add and rent cars with a user-friendly interface.
                     </p>
 
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
-                    <ul className="space-y-2 text-lg md:text-xl font-medium text-gray-800">
+                    <ul className="space-y-2 text-2xl font-medium text-gray-800">
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Rent a car</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Track a car's booking count</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Searching and sorting by name and car price</li>
@@ -45,7 +45,7 @@ const Projects = () => {
                         💻 GitHub Repo
                         </button>
                     </a>
-                    <Link to='/jatriDetails'>
+                    <Link to='/jatriDetails' target='_blank'>
                         <button className='cursor-pointer bg-[#CCD6F6] text-purple-800 border-2 border-purple-700 px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-100 transition-all duration-300 transform hover:-translate-y-1'>
                             🔍 Details
                         </button>
@@ -53,23 +53,23 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col-reverse md:flex-row-reverse gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
+            <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col lg:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
                 <div className="lg:w-1/2">
                     <img 
-                    className="w-full h-full rounded-xl shadow-lg "
+                    className="lg:w-full lg:h-full rounded-xl shadow-lg"
                     src={TechGigsProject} 
                     alt="TechGigs Project Preview" 
                     />
                 </div>
-                <div className='text-left space-y-2 md:w-1/2 w-full'>
+                <div className='text-left space-y-2 w-full lg:w-1/2'>
                     <h1 className='text-6xl font-extrabold text-purple-800'>TechGigs 📝</h1>
-                    <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-700">
-                    TechGigs is a freelancing task management side that helps users to find,bid and earn money by completing tasks.
+                    <p className="text-2xl font-medium leading-relaxed text-gray-700">
+                        TechGigs is a freelancing task management side that helps users to find,bid and earn money by completing tasks.
                     </p>
 
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
-                    <ul className="space-y-2 text-xl md:text-2xl font-medium text-gray-800">
+                    <ul className="space-y-2 text-2xl md:text-2xl font-medium text-gray-800">
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Bid For any task</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Add,Delete and Update tasks</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Dashboard for managing tasks effectively</li>
@@ -88,7 +88,7 @@ const Projects = () => {
                         💻 GitHub Repo
                         </button>
                     </a>
-                    <Link to='/TechGigsDetails'>
+                    <Link to='/TechGigsDetails' target='_blank'>
                         <button className='cursor-pointer bg-[#CCD6F6] text-purple-800 border-2 border-purple-700 px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-100 transition-all duration-300 transform hover:-translate-y-1'>
                             🔍 Details
                         </button>
@@ -96,23 +96,23 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col md:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
+            <div className='bg-gradient-to-r from-purple-100 to-purple-200 p-4 rounded-3xl shadow-xl flex flex-col lg:flex-row gap-10 items-center hover:scale-[1.01] transition-transform duration-300'>
                 <div className="lg:w-1/2">
                     <img 
-                        className="w-full h-full rounded-xl shadow-lg "
+                        className="lg:w-full lg:h-full rounded-xl shadow-lg"
                         src={CareerFindProject} 
                         alt="CareerFind Project Preview" 
                     />
                 </div>
-                <div className='text-left space-y-2 md:w-1/2 w-full'>
+                <div className='text-left space-y-2 w-full lg:w-1/2'>
                     <h1 className='text-6xl font-extrabold text-purple-800'>CareerFind 🔍</h1>
-                    <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-700">
+                    <p className="text-2xl md:text-2xl font-medium leading-relaxed text-gray-700">
                     CareerFind site helps you to find your dream career with trusted and renowned companies help. 
                     </p>
 
                     <div>
                     <h2 className='text-3xl font-bold text-purple-900 mb-3'>Core Features</h2>
-                    <ul className="space-y-2 text-xl md:text-2xl font-medium">
+                    <ul className="space-y-2 text-2xl md:text-2xl font-medium">
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Find job</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> See details of job</li>
                         <li className='flex gap-3 items-center'><FiCheckCircle className="text-purple-600"/> Authentication and Private route</li>
@@ -131,7 +131,7 @@ const Projects = () => {
                         💻 GitHub Repo
                         </button>
                     </a>
-                    <Link to='/careerFind'>
+                    <Link to='/careerFind' target='_blank'>
                         <button className='cursor-pointer bg-[#CCD6F6] text-purple-800 border-2 border-purple-700 px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-100 transition-all duration-300 transform hover:-translate-y-1'>
                             🔍 Details
                         </button>

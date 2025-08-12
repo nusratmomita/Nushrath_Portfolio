@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 const Header = () => {
     return (
@@ -19,7 +20,7 @@ const Header = () => {
                         <a href="#contactMe"> <li className='text-2xl'>Contact Me</li></a>
                 </ul>
                 </div>
-                <h1 className="text-2xl p-2">Nushrath</h1>
+                <h1 className='text-3xl'>👩‍💻Nushrath</h1>
             </div>
             {/* Large screen */}
             <div className="navbar-end hidden lg:flex">

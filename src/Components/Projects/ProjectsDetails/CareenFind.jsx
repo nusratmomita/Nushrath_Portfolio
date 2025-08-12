@@ -48,7 +48,7 @@ const CareenFind = () => {
                     </p>
                 </section>
 
-                <div className="text-center pt-6">
+                <div className="text-center pt-6 block w-[17%]">
                     <Link to='/'>
                         <motion.div
                             whileHover={{ scale: 1.05 }}

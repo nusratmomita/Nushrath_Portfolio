@@ -65,7 +65,7 @@ const ContactMe = () => {
         {/* Left Side */}
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-4xl font-bold text-purple-800">📞 Contact Info</h2>
-          <div className="text-2xl text-gray-700 space-y-3">
+          <div className="text-3xl text-gray-700 space-y-3">
             <p><span className="font-semibold">Email:</span> nushrathhussain961@gmail</p>
             <p><span className="font-semibold">Mobile:</span> +880-1741-444-961</p>
           </div>

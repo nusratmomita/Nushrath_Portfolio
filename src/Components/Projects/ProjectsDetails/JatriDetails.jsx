@@ -9,7 +9,7 @@ import techStack from '../../../assets/techStack.png';
 const JatriDetails = () => {
     return (
        <motion.div
-            className="card bg-purple-200 shadow-2xl max-w-5xl mx-auto my-10 rounded-3xl border border-gray-200"
+            className="card bg-[#DED3C4] shadow-2xl max-w-5xl mx-auto my-10 rounded-3xl border border-gray-200"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}>
@@ -49,7 +49,8 @@ const JatriDetails = () => {
                     </p>
                 </section>
 
-                 <div className="text-center pt-6 block w-full lg:w-[17%]">
+                {/* Home button */}
+                <div className="text-center pt-6 block lg:w-[17%] mx-auto">
                     <Link to='/'>
                         <motion.div
                             whileHover={{ scale: 1.05 }}

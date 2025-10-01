@@ -1,12 +1,80 @@
-# React + Vite
+<!--
+  README for Nushrath Momita’s Portfolio
+  Feel free to customize: colors, sections, ordering, badges, etc.
+-->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 👋 Hello! I’m **Nushrath Momita**
 
-Currently, two official plugins are available:
+[![Portfolio Website](https://img.shields.io/badge/Website-nushrathmomita.netlify.app-blue?style=flat-square&logo=netlify)](https://nushrathmomita.netlify.app/)  
+[![GitHub followers](https://img.shields.io/github/followers/YourGitHubUser?label=Follow&style=social)](https://github.com/YourGitHubUser)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to my portfolio repository! Below you’ll find details about what you’ll see here, how the site is built, and how to run or deploy it yourself.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📷 Screenshot
+
+> Here’s a preview of the live site:
+
+![Home page Screenshot](https://i.ibb.co.com/Hf3zCH0m/1.png)
+![Project details Screenshot](https://i.ibb.co.com/G462sD4K/2.png)
+
+
+---
+
+## 🔗 Live Demo
+
+You can check out the live version here:  
+**https://nushrathmomita.netlify.app/**
+
+---
+
+## 💡 About This Project
+
+This project is my personal portfolio website — a place to showcase my work, skills, blog posts, contact info, and more.
+
+**Features include:**
+- Responsive design — works across desktop, tablet, and mobile
+- Beautiful animations & transitions
+- Projects section with links to live demos & code
+- Contact form / social links
+
+---
+
+## 🛠 Tech Stack
+
+| Layer        | Technologies Used                                |
+|--------------|---------------------------------------------------|
+| Frontend     | HTML, CSS, JavaScript, React |
+| Styling      | Tailwind         |
+| Deployment   | Netlify               |
+
+
+---
+
+## 🚀 Getting Started (for developers)
+
+If someone wants to clone and run your project locally:
+
+```bash
+# Clone this repo
+git clone https://github.com/nusratmomita/Nushrath_Portfolio.git
+
+# Move into the directory
+cd your-portfolio-repo
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Start in dev mode
+npm run dev
+# or
+yarn dev
+
+# Build for production
+npm run build
+# or
+yarn build
+

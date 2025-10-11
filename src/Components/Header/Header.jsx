@@ -13,7 +13,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div className={`navbar ${scrolled ? 'bg-[#693B93]/95 backdrop-blur-md shadow-lg' : 'bg-[#693B93]'} text-[#D9D9D9] p-4 lg:p-6 fixed top-0 z-50 transition-all duration-300`}>
+        <div className={`navbar ${scrolled ? 'bg-[#693B93]/95 backdrop-blur-md shadow-lg' : 'bg-[#693B93]'} text-[#D9D9D9] p-2 fixed top-0 z-50 transition-all duration-300`}>
             <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
                 {/* Logo Section */}
                 <div className="navbar-start">

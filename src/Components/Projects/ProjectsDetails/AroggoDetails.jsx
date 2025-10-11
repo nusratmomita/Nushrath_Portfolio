@@ -8,7 +8,7 @@ import techStack from '../../../assets/techStack.png';
 const AroggoInfo = () => {
     return (
         <motion.div
-            className="card bg-[#DED3C4] shadow-2xl max-w-5xl mx-auto my-10 rounded-3xl border border-gray-200"
+            className="m-10 card bg-[#DED3C4] shadow-2xl lg:max-w-5xl lg:mx-auto my-10 rounded-3xl border border-gray-200"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}>
@@ -16,17 +16,17 @@ const AroggoInfo = () => {
                 
                 {/* Description */}
                 <section>
-                    <h2 className="text-4xl font-bold mb-2">🔗 Description</h2>
-                    <p className="text-2xl font-medium">
-                        <span className="font-bold">Aroggo💊</span> is a medicine e-commerce platform that helps users to 
+                    <h2 className="text-3xl lg:text-4xl font-bold mb-2">🔗 Description</h2>
+                    <p className="text-xl lg:text-2xl font-medium">
+                        <span className="font-bold">Aroggo</span> is a medicine e-commerce platform that helps users to 
                         browse, buy, and pay for medicines easily with a smooth online experience.
                     </p>
                 </section>
 
                 {/* Tech Stack */}
                 <section>
-                    <h2 className="text-4xl font-bold mb-4">🎯 Technologies Used</h2>
-                    <ul className="grid grid-cols-2 gap-4 text-2xl font-bold">
+                    <h2 className="text-3xl lg:text-4xl font-bold mb-4">🎯 Technologies Used</h2>
+                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 text-xl lg:text-2xl font-medium">
                         {[
                             "React", 
                             "React Router", 
@@ -46,8 +46,8 @@ const AroggoInfo = () => {
 
                 {/* Challenges */}
                 <section>
-                    <h2 className="text-4xl font-bold mb-2">🦾 Challenges</h2>
-                    <p className="text-2xl font-medium">
+                    <h2 className="text-3xl lg:text-4xl font-bold mb-2">🦾 Challenges</h2>
+                    <p className="text-xl lg:text-2xl font-medium">
                         The biggest challenge was implementing secure role-based access (User, Seller, Admin) 
                         and handling JWT authentication properly with Firebase tokens.
                     </p>
@@ -55,8 +55,8 @@ const AroggoInfo = () => {
 
                 {/* Future Improvements */}
                 <section>
-                    <h2 className="text-4xl font-bold mb-2">⚡ Future Improvements</h2>
-                    <p className="text-2xl font-medium">
+                    <h2 className="text-3xl lg:text-4xl font-bold mb-2">⚡ Future Improvements</h2>
+                    <p className="text-xl lg:text-2xl font-medium">
                         Planned features include AI-based medicine recommendations, 
                         improved order tracking, and real-time notifications for sellers and buyers.
                     </p>

@@ -4,7 +4,6 @@ import { FaDownload, FaFileAlt, FaGithub } from "react-icons/fa";
 import { TbCodeCircle2 } from "react-icons/tb";
 import profileImage from '../../assets/profilePic.png'
 
-// max-w-7xl mx-10 lg:mx-auto mt-20 mb-20 rounded-4xl flex items-center justify-center bg-[url(assets/bannerImage.png)] 
 const Banner = () => {
     const [mouseHovered , setMouseHovered] = useState(false);
 

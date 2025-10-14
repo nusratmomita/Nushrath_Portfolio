@@ -62,7 +62,7 @@ const Projects = () => {
                             </button>
                         </a>
 
-                        <a href="https://github.com/nusratmomita/Aroggo-Client" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/nusratmomita/Aroggo_Client" target="_blank" rel="noopener noreferrer">
                             <button className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
                                 <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/> Code
                             </button>

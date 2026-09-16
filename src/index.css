@@ -12,6 +12,9 @@
   font-style: normal;
 }
 
+.debug{
+  border: 4px solid red;
+}
 
 /* color palette */
 /* dark purple1 : #251C31

@@ -6,7 +6,7 @@ const Education = () => {
             <h1 className='text-6xl font-extrabold text-[#D9D9D9] text-left'>Education</h1>
             <div className="px-6 py-10 bg-purple-100 rounded-tr-4xl rounded-bl-4xl shadow-md space-y-5">
                 <p className="text-3xl font-bold leading-relaxed">Currently, I am on my final year of bachelor's degree.
-                    I am doing BSc in <span className='text-4xl font-extrabold'>"Software Engineering"</span> from <span className='text-4xl font-extrabold italic'>"Metropolitan University".</span>
+                    I hold a degrre in B.Sc<span className='text-4xl font-extrabold'>Software Engineering</span> from Sylhet Metropolitan University.
                 </p>
                 <p className="text-3xl font-bold leading-relaxed">During my academics, I have gained a reasonable knowledge about core subjects like Computer Networking, Database Management, Operating System and many more.</p>
             </div>

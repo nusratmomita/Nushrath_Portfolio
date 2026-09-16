@@ -56,28 +56,27 @@ const Projects = () => {
                     </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
-                        <a href="https://aroggo-e998e.web.app/" target="_blank" rel="noopener noreferrer">
-                            <button className='group/btn cursor-pointer bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-900 text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiExternalLink className='group-hover/btn:rotate-45 transition-transform duration-300'/> Live Site
-                            </button>
+                        <a href="https://aroggo-e998e.web.app/" target="_blank" rel="noopener noreferrer" 
+                            className='group/btn cursor-pointer bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>                            
+                            <FiExternalLink className='group-hover/btn:rotate-45 transition-transform duration-300'/> 
+                            Live Site
                         </a>
-
-                        <a href="https://github.com/nusratmomita/Aroggo_Client" target="_blank" rel="noopener noreferrer">
-                            <button className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/> Code
-                            </button>
+                        <a href="https://github.com/nusratmomita/Aroggo_Client" target="_blank" rel="noopener noreferrer"
+                            className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
+                            <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/>
+                            Code
                         </a>
-                        <Link to='/AroggoDetails'>
-                            <button className='group/btn cursor-pointer bg-white text-purple-800 border-2 border-purple-600 px-6 py-3 rounded-xl text-base font-semibold shadow-md hover:bg-purple-50 hover:border-purple-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiInfo className='group-hover/btn:scale-125 transition-transform duration-300'/> View Details
-                            </button>
+                        <Link to='/AroggoDetails'
+                            className='group/btn cursor-pointer bg-white text-purple-800 border-2 border-purple-600 px-6 py-3 rounded-xl text-base font-semibold shadow-md hover:bg-purple-50 hover:border-purple-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
+                            <FiInfo className='group-hover/btn:scale-125 transition-transform duration-300'/> 
+                            View Details
                         </Link>
                     </div>
                 </div>
             </div>
 
             {/* Jatri Project */}
-            <div className='group bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl flex flex-col lg:flex-row-reverse gap-8 items-center transition-all duration-500 hover:-translate-y-2 border border-purple-100'>
+            <div className='group bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl flex flex-col lg:flex-row-reverse gap-8 items-center transition-all duration-500 border border-purple-100'>
                 <div className="lg:w-1/2 overflow-hidden rounded-2xl relative">
                     <img 
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -116,28 +115,27 @@ const Projects = () => {
                     </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
-                        <a href="https://jatri-9cc51.web.app/" target="_blank" rel="noopener noreferrer">
-                            <button className='group/btn cursor-pointer bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-900 text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiExternalLink className='group-hover/btn:rotate-45 transition-transform duration-300'/> Live Site
-                            </button>
+                        <a href="https://jatri-9cc51.web.app/" target="_blank" rel="noopener noreferrer" 
+                            className='group/btn cursor-pointer bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>                            
+                            <FiExternalLink className='group-hover/btn:rotate-45 transition-transform duration-300'/> 
+                            Live Site
                         </a>
-
-                        <a href="https://github.com/nusratmomita/Jatri_Client" target="_blank" rel="noopener noreferrer">
-                            <button className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/> Code
-                            </button>
+                        <a href="https://github.com/nusratmomita/Jatri_Client" target="_blank" rel="noopener noreferrer"
+                            className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
+                            <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/>
+                            Code
                         </a>
-                        <Link to='/jatriDetails'>
-                            <button className='group/btn cursor-pointer bg-white text-purple-800 border-2 border-purple-600 px-6 py-3 rounded-xl text-base font-semibold shadow-md hover:bg-purple-50 hover:border-purple-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiInfo className='group-hover/btn:scale-125 transition-transform duration-300'/> View Details
-                            </button>
+                        <Link to='/jatriDetails'
+                            className='group/btn cursor-pointer bg-white text-purple-800 border-2 border-purple-600 px-6 py-3 rounded-xl text-base font-semibold shadow-md hover:bg-purple-50 hover:border-purple-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
+                            <FiInfo className='group-hover/btn:scale-125 transition-transform duration-300'/> 
+                            View Details
                         </Link>
                     </div>
                 </div>
             </div>
 
             {/* TechGigs Project */}
-            <div className='group bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl flex flex-col lg:flex-row gap-8 items-center transition-all duration-500 hover:-translate-y-2 border border-purple-100'>
+            <div className='group bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl flex flex-col lg:flex-row gap-8 items-center transition-all duration-500 border border-purple-100'>
                 <div className="lg:w-1/2 overflow-hidden rounded-2xl relative">
                     <img 
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -176,21 +174,20 @@ const Projects = () => {
                     </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
-                        <a href="https://techgigs-79204.web.app/" target="_blank" rel="noopener noreferrer">
-                            <button className='group/btn cursor-pointer bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-900 text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiExternalLink className='group-hover/btn:rotate-45 transition-transform duration-300'/> Live Site
-                            </button>
+                        <a href="https://techgigs-79204.web.app/" target="_blank" rel="noopener noreferrer" 
+                            className='group/btn cursor-pointer bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>                            
+                            <FiExternalLink className='group-hover/btn:rotate-45 transition-transform duration-300'/> 
+                            Live Site
                         </a>
-
-                        <a href="https://github.com/nusratmomita/TechGigs_Client" target="_blank" rel="noopener noreferrer">
-                            <button className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/> Code
-                            </button>
+                        <a href="https://github.com/nusratmomita/TechGigs_Client" target="_blank" rel="noopener noreferrer"
+                            className='group/btn cursor-pointer bg-[#2C1250] hover:bg-[#1a0d30] text-white px-6 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
+                            <FiGithub className='group-hover/btn:rotate-12 transition-transform duration-300'/>
+                            Code
                         </a>
-                        <Link to='/TechGigsDetails'>
-                            <button className='group/btn cursor-pointer bg-white text-purple-800 border-2 border-purple-600 px-6 py-3 rounded-xl text-base font-semibold shadow-md hover:bg-purple-50 hover:border-purple-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
-                                <FiInfo className='group-hover/btn:scale-125 transition-transform duration-300'/> View Details
-                            </button>
+                        <Link to='/TechGigsDetails'
+                            className='group/btn cursor-pointer bg-white text-purple-800 border-2 border-purple-600 px-6 py-3 rounded-xl text-base font-semibold shadow-md hover:bg-purple-50 hover:border-purple-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2'>
+                            <FiInfo className='group-hover/btn:scale-125 transition-transform duration-300'/> 
+                            View Details
                         </Link>
                     </div>
                 </div>

@@ -67,29 +67,21 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-2">
-                        <a href="#aboutMe" className="group relative">
-                            <li className='px-4 py-2 text-lg font-medium hover:text-white transition-colors duration-300 cursor-pointer'>
-                                About Me
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
-                            </li>
+                        <a href="#aboutMe" className="group relative inline-block px-4 py-2 text-lg font-medium transition-colors duration-300 cursor-pointer">
+                            About Me
+                            <span className="absolute left-0 bottom-[2px] w-0 h-[1px] bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
                         </a>
-                        <a href="#skills" className="group relative">
-                            <li className='px-4 py-2 text-lg font-medium hover:text-white transition-colors duration-300 cursor-pointer'>
-                                Skills
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
-                            </li>
+                        <a href="#skills" className="group relative inline-block px-4 py-2 text-lg font-medium transition-colors duration-300 cursor-pointer">
+                            Skills
+                            <span className="absolute left-0 bottom-[2px] w-0 h-[1px] bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
                         </a>
-                        <a href="#education" className="group relative">
-                            <li className='px-4 py-2 text-lg font-medium hover:text-white transition-colors duration-300 cursor-pointer'>
-                                Education
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
-                            </li>
+                        <a href="#education" className="group relative inline-block px-4 py-2 text-lg font-medium transition-colors duration-300 cursor-pointer">
+                            Education
+                            <span className="absolute left-0 bottom-[2px] w-0 h-[1px] bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
                         </a>
-                        <a href="#projects" className="group relative">
-                            <li className='px-4 py-2 text-lg font-medium hover:text-white transition-colors duration-300 cursor-pointer'>
-                                Projects
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
-                            </li>
+                        <a href="#projects" className="group relative inline-block px-4 py-2 text-lg font-medium transition-colors duration-300 cursor-pointer">
+                            Projects
+                            <span className="absolute left-0 bottom-[2px] w-0 h-[1px] bg-gradient-to-r from-purple-300 to-white group-hover:w-full transition-all duration-300"></span>
                         </a>
                         <a href="#contactMe">
                             <li className='ml-2 px-6 py-2 text-lg font-semibold bg-white text-[#693B93] rounded-xl hover:bg-purple-100 hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl'>

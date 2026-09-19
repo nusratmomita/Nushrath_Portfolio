@@ -5,12 +5,11 @@ import Skills from '../../Components/Skills/Skills';
 import Education from '../../Components/Education/Education';
 import Projects from '../../Components/Projects/Projects';
 import ContactMe from '../../Components/ContactMe/ContactMe';
-import Sidebar from '../../Components/Sidebar/Sidebar';
+// import Sidebar from '../../Components/Sidebar/Sidebar';
 
 const Home = () => {
     return (
-        <div className='bg-[#251C31] overflow-hidden  pt-[100px] pb-[100px]'>
-            <Sidebar />
+        <div className='bg-[#251C31] overflow-hidden pb-10'>
             <Banner />
             <AboutMe />
             <Skills />

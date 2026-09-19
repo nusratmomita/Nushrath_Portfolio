@@ -4,6 +4,15 @@
 @plugin "daisyui";
 
 
+html{
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(50, 1, 50) rgb(236, 179, 236);
+  scrollbar-width: auto;
+}
+
+::selection{
+  background: rgb(239, 178, 239);
+}
 
 .truculenta-font {
   font-family: "Truculenta", sans-serif;

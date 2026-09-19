@@ -98,10 +98,62 @@
 // export default Header;
 
 import React from 'react'
+import { PiFinnTheHumanLight } from "react-icons/pi";
+import { TbSettingsCode } from "react-icons/tb";
+import { PiGraduationCapBold } from "react-icons/pi";
+import { GrProjects } from "react-icons/gr";
+import { SlEnvolope } from "react-icons/sl";
+
+const navlinks = [
+  {
+    id: 1,
+    linkName: "About Me",
+    icon: PiFinnTheHumanLight,
+    bookmark: "aboutMe"
+  },
+  {
+    id: 2,
+    linkName: "Skills",
+    icon: TbSettingsCode,
+    bookmark: "skills"
+  },
+  {
+    id: 3,
+    linkName: "Education",
+    icon: PiGraduationCapBold,
+    bookmark: "education"
+  },
+  {
+    id: 4,
+    linkName: "Projects",
+    icon: GrProjects,
+    bookmark: "projects"
+  },
+  {
+    id: 5,
+    linkName: "Contact Me",
+    icon: SlEnvolope,
+    bookmark: "contactMe"
+  },
+];
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <aside className='bg-purple-100 w-[180px] h-screen z-150 top-0 sticky'>
+      <ul>
+        {
+          navlinks.map(link => (
+            <li key={link.id} className='text-purple-950 text-2xl font-semibold cursor-pointer pl-3 pt-5'>
+              <a href={`#${link.bookmark}`} className='flex gap-4 items-center'>
+                <link.icon/>
+                <h3>{link.linkName}</h3>
+              </a>
+
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
   )
 }
 

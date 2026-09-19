@@ -8,7 +8,7 @@ const Banner = () => {
     const [mouseHovered , setMouseHovered] = useState(false);
 
     return (
-        <div  className='max-w-7xl mx-10 lg:mx-auto mt-20 mb-20 rounded-4xl  bg-[#251C31] bg-[url(assets/bannerImage.png)] '>
+        <div  className='max-w-7xl mx-10 lg:mx-auto mt-10 mb-20 rounded-4xl bg-[#251C31] bg-[url(assets/bannerImage.png)] '>
             <div className='flex flex-col-reverse lg:flex-row gap-20 lg:gap-50 justify-center items-center p-10'>
                 <div className='text-[#2C1250] space-y-5'>
                     <h1 className='text-4xl font-extrabold'>Hi, I am Nushrath Momita Hussain, <br /><span className='text-3xl italic'>a passionate Full-stack Developer</span></h1>
